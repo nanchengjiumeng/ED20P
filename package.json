@@ -1,0 +1,22 @@
+{
+  "name": "ED20P",
+  "version": "1.0.0",
+  "description": "每天读书20页",
+  "author": "wang yu biao",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development NUXT_HOST=192.168.2.61 nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.19",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
